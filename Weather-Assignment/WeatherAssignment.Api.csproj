@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>Weather_Assignment</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.11"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\WeatherAssignment.BLL\WeatherAssignment.BLL.csproj" />
+		<ProjectReference Include="..\WeatherAssignment.Data\WeatherAssignment.Data.csproj" />
+	</ItemGroup>
+
+</Project>
